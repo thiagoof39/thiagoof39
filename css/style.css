@@ -51,9 +51,11 @@ section p{
 }
 
 img {
-    transform: rotate(-30deg);
-    /* margin-left: -50px; 
-    margin-top: -60px;*/
+    transform: rotate(-32deg);
+    margin-left: -30px; 
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
 }
 
 #sobre {
