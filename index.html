@@ -17,82 +17,112 @@
 
     <link rel="stylesheet" href="css/style.css">
     <title>Thiago Oliveira</title>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var links = document.querySelectorAll(".navbar-nav li a:not([href='#'])");
+            for (var x = 0; x < links.length; x++) {
+                links[x].onclick = function () {
+                    document.querySelector("button.navbar-toggler").click();
+                }
+            }
+        });
+    </script>
 </head>
 
 <body>
 
-    <header id="menu"><!-- inicio Cabecalho -->
-        <nav class="navbar navbar-expand-md navbar-white fixed-top bg-dark navbar-transparente">
-          <div class="container">
-            
-            <h4>
-              <span>Thiago Oliveira</span>
-            </h4>
-  
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-              <i class="fas fa-bars text-white"></i>
-            </button>
-  
-            <div class="collapse navbar-collapse" id="nav-principal">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a href="#home" class="nav-link text-center">Home</a>
-                </li>
-                <li class="nav-item text-center">
-                  <a href="#sobre" class="nav-link">Sobre</a>
-                </li>
-                <li class="nav-item text-center">
-                  <a href="#portfolio" class="nav-link">Portfólio</a>
-                </li>
-                <li class="nav-item text-center">
-                    <a href="#stacks" class="nav-link">Stacks</a>
-                </li>
-                <li class="nav-item text-center">
-                <a href="#contato" class="nav-link">Contato</a>
-              </ul>
+    <header id="menu">
+        <!-- inicio Cabecalho -->
+        <nav class="navbar navbar-expand-lg navbar-white fixed-top bg-dark navbar-transparente">
+            <div class="container">
+
+                <h4>
+                    <span>Thiago Oliveira</span>
+                </h4>
+
+                <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
+                    data-target="#nav-principal" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a href="#menu" class="nav-link text-center active">Home</a>
+                        </li>
+
+                        <li class="nav-item text-center">
+                            <a href="#sobre" class="nav-link">Sobre</a>
+                        </li>
+
+                        <li class="nav-item text-center">
+                            <a href="#portfolio" class="nav-link">Portfólio</a>
+                        </li>
+
+                        <li class="nav-item text-center">
+                            <a href="#stacks" class="nav-link">Stacks</a>
+                        </li>
+
+                        <li class="nav-item text-center">
+                            <a href="#contato" class="nav-link">Contato</a>
+                        </li>
+
+                    </ul>
+                </div>
+
             </div>
-  
-          </div>
         </nav>
-      </header><!--/fim Cabecalho -->
-    
-    <section id="banner"><!--home -->
-        <div class="container-fluid"><!--container -->   
+    </header>
+    <!--/fim Cabecalho -->
 
-          <div class="row justify-content-center"><!--row d-flex   align-self-center -->
-            
-              <div class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner"><!--Inner -->
-                    
-                    <div class="carousel-item active">
-                        <h1 class="bw-5">Thiago Oliveira</h1>  
-                        <span class="text-white">
-                            Desenvolvedor Web
-                        </span>
-                    </div>
+    <section id="banner">
+        <!--home -->
+        <div class="container-fluid">
+            <!--container -->
 
-                    <div class="carousel-item">
-                        <h1>Sites responsivos</h1>
-                        <span class="text-white">
-                            Adaptável a diversos tamanhos de tela
-                        </span>
+            <div class="row justify-content-center">
+                <!--row d-flex   align-self-center -->
+
+                <div class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!--Inner -->
+
+                        <div class="carousel-item active">
+                            <h1 class="bw-5">Thiago Oliveira</h1>
+                            <span class="text-white">
+                                Desenvolvedor Web
+                            </span>
+                        </div>
+
+                        <div class="carousel-item">
+                            <h1>Sites responsivos</h1>
+                            <span class="text-white">
+                                Adaptável a diversos tamanhos de tela
+                            </span>
+                        </div>
+
+                        <div class="carousel-item">
+                            <h1>Aplicativos mobile</h1>
+                            <span class="text-white">
+                                App multiplataforma
+                            </span>
+                        </div>
+
                     </div>
-  
-                  <div class="carousel-item">
-                    <h1>Aplicativos mobile</h1>
-                    <span class="text-white">
-                        App multiplataforma
-                      </span>
-                  </div>
-  
-                </div><!--/Inner -->           
-              </div>
-  
-            
-          </div><!--/row -->
-        </div><!--/container -->
-      </section><!--/home -->    
-      
+                    <!--/Inner -->
+                </div>
+
+
+            </div>
+            <!--/row -->
+        </div>
+        <!--/container -->
+    </section>
+    <!--/home -->
+
     <section id="sobre">
         <div class="container-fluid">
             <div class="row">
@@ -102,16 +132,17 @@
 
                 <div class="col-md-8 p-5">
                     <h2>Thiago Oliveira</h2>
-                    <p>                        
+                    <p>
                         Sou do Rio de Janeiro, atuando no mercado de desenvolvimento web desde o início de 2018
-                        buscando uma carreira sólida. Meu primeiro emprego na área foi como estagiário em um Orgão Federal,
-                        e trabalhei também em um Centro de Pesquisas reconhecido mudialmente que me o proporcionou um 
+                        buscando uma carreira sólida. Meu primeiro emprego na área foi como estagiário em um Orgão
+                        Federal,
+                        e trabalhei também em um Centro de Pesquisas reconhecido mudialmente que me o proporcionou um
                         grande ganho de conhecimento.
                     </p>
                     <p>
                         Formação técnica em Informática, e atualmente estudante de bacharelado em Sistema da Informação.
                         Entusiata da tecnologia e do conhecimento, sempre buscando conhecimento das linguagens em
-                        livros, artigos, vídeos e podcasts. Tendo como objetivo de carreira o desenvolvimento de Sites e 
+                        livros, artigos, vídeos e podcasts. Tendo como objetivo de carreira o desenvolvimento de Sites e
                         Aplicativos Mobile
                     </p>
                     <p>
@@ -129,30 +160,33 @@
             <h3 style="text-align: center;">Portfólio</h3>
             <div class="row">
 
-                    <div class="col-md-4  " style="width: 400px; height: 480px;">
-                        
-                        <img src="img/banner.jpg" style="width: 430px; height: 400px; padding: 0; margin: 0;" alt="" class="img-fluid">
-                        <p class="pt-2 rounded border-bottom text-center" style="padding: 0; margin: 0;" >
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>                    
-                    </div>
+                <div class="col-md-4  " style="width: 400px; height: 480px;">
 
-                    <div class="col-md-4" style="width: 400px; height: 480px;">
-                        <img src="img/banner.jpg" style="width: 430px; height: 400px; padding: 0; margin: 0;" alt="" class="img-fluid">
-                        <p class="pt-2 rounded border-bottom text-center" style="padding: 0; margin: 0;" >
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>                    
-                    </div>
+                    <img src="img/banner.jpg" style="width: 430px; height: 400px; padding: 0; margin: 0;" alt=""
+                        class="img-fluid">
+                    <p class="pt-2 rounded border-bottom text-center" style="padding: 0; margin: 0;">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                </div>
 
-                    <div class="col-md-4" style="width: 400px; height: 480px;">
-                        <img src="img/banner.jpg" style="width: 430px; height: 400px; padding: 0; margin: 0;" alt="" class="img-fluid">
-                        <p class="pt-2 rounded border-bottom text-center" style="padding: 0; margin: 0;" >
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>                    
-                    </div>
+                <div class="col-md-4" style="width: 400px; height: 480px;">
+                    <img src="img/banner.jpg" style="width: 430px; height: 400px; padding: 0; margin: 0;" alt=""
+                        class="img-fluid">
+                    <p class="pt-2 rounded border-bottom text-center" style="padding: 0; margin: 0;">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                </div>
+
+                <div class="col-md-4" style="width: 400px; height: 480px;">
+                    <img src="img/banner.jpg" style="width: 430px; height: 400px; padding: 0; margin: 0;" alt=""
+                        class="img-fluid">
+                    <p class="pt-2 rounded border-bottom text-center" style="padding: 0; margin: 0;">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                </div>
 
             </div>
         </div>
@@ -185,26 +219,26 @@
     <section id="contato">
         <div class="container-fluid">
             <div class="row text-center">
-                        <div class="col-sm mt-3">
-                            <i class="fab fa-linkedin fa-2x pr-1"></i>            
-                            <a href="https://www.linkedin.com/in/thiagoof/">LinkedIn</a>
-                        </div>
-        
-                        <div class="col-sm mt-3">
-                            <i class="fab fa-github fa-2x pr-1"></i>
-                            <a href="https://github.com/thiagoof39">GitHub</a>
-                        </div>
-        
-                        <div class="col-sm mt-3">
-                            <i class="fab fa-whatsapp fa-2x pr-1"></i>        
-                            <a href="https://wa.me/5521973427283">Whatsapp</a>
-                        </div>                     
-                        
-                        <div class="col-sm mt-3">
-                            <i class="fas fa-envelope fa-2x pr-1"></i>            
-                            <a href="mailto:thiagoof39@hotmail.com">thiagoof39@g mail.com</a>
-                        </div>
-        
+                <div class="col-sm mt-3">
+                    <i class="fab fa-linkedin fa-2x pr-1"></i>
+                    <a href="https://www.linkedin.com/in/thiagoof/">LinkedIn</a>
+                </div>
+
+                <div class="col-sm mt-3">
+                    <i class="fab fa-github fa-2x pr-1"></i>
+                    <a href="https://github.com/thiagoof39">GitHub</a>
+                </div>
+
+                <div class="col-sm mt-3">
+                    <i class="fab fa-whatsapp fa-2x pr-1"></i>
+                    <a href="https://wa.me/5521973427283">Whatsapp</a>
+                </div>
+
+                <div class="col-sm mt-3">
+                    <i class="fas fa-envelope fa-2x pr-1"></i>
+                    <a href="mailto:thiagoof39@hotmail.com">thiagoof39@g mail.com</a>
+                </div>
+
             </div>
         </div>
     </section>
@@ -212,16 +246,24 @@
     <footer id="rodape" class="mt-3">
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <span>Desenvolvido por Thiago Oliveira - 2020</span>                
-            </div>          
+                <span>Desenvolvido por Thiago Oliveira - 2020</span>
+            </div>
         </div>
     </footer>
 
     <!-- JavaScript (Opcional) -->
+    <link rel="stylesheet" href="js/">
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
- 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
