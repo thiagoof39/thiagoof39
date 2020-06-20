@@ -17,6 +17,9 @@ body {
     background-attachment: fixed !important;
     
     -webkit-font-smoothing: antialiased;
+
+    max-width: 1600px;
+    max-height: 1200px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,7 +99,7 @@ img {
 
 #portfolio .row {
     display: flex;
-    justify-content: center;
+    justify-content: start;
 
 }
 
