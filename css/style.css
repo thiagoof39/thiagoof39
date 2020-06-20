@@ -9,23 +9,8 @@
     box-sizing: border-box;
 }
 
-html {
-    font-family: Roboto, sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: Ubuntu, sans-serif;
-    /* color: var(--title-color); */
-}
-
 body {
-    padding: 0px 0 20px 0px;
-    margin: 0px;
-    font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Roboto, sans-serif;
     color: #f0e7d5;
     font-weight: normal;
     background: #252525;
@@ -34,38 +19,140 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* section #title h1 {
-    font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    font-size: 40px;
-    text-align: center;
-    line-height: 36px;
-} */
-
-section {
- border: 2px solid yellow;
+h1, h2, h3, h4, h5, h6 {
+    font-family: Ubuntu, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
 }
+
+
+.navbar-transparente {
+	padding: 15px 0px;
+    background: rgba(0,0,0,0.6);
+    margin-bottom: 10px;
+}
+
+.carousel-inner {
+    margin-top: 10vh;
+}
+
+.carousel-inner h1 {
+    text-transform: uppercase;
+}
+
+.carousel-inner span {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    display: inline-block
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li a:hover {
+    border-bottom: 1px solid white;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 1s ease;
+    padding: 0;
+}
+
 
 section p{
     margin-left: 0;
 }
 
 img {
-    transform: rotate(-32deg);
+    /* transform: rotate(-32deg); */
     margin-left: -30px; 
     margin-top: -50px;
     display: flex;
     align-items: center;
 }
 
+
+
+
+#banner {
+    position: relative;
+    height: 90vh;
+    opacity: 0.8;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;    
+    background-image: url(../img/banner2.jpg);
+
+    margin-top: 5vh;
+}
+
 #sobre {
     margin-top: 30px;
 }
 
-#sobre h3, p {
+#sobre p {
     text-align: justify;
+    font-size: 1.2em;
 }
 
-li {
-    display: inline-block
+#portfolio .row {
+    display: flex;
+    justify-content: center;
+
+}
+
+#stacks p {
+    font-size: 1rem;
+    font-family: Roboto, sans-serif;
+
+    margin-top: 3vh;
+}
+
+#contato a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#contato a:hover {
+    border-bottom: 1px solid white;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 1s ease;
+    padding: 0;
+}
+
+footer {
+    margin-bottom: -5rem;
+    padding: 0.3rem 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+footer span {
+    line-height: 2rem;
+    font-family: ubuntu, sans-serif;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	#nav-principal {
+		text-transform: uppercase;
+	}
+}
+
+@media (max-width: 767.98px) {
+	nav h4, button {
+        margin-left: 3vw;
+    }
+    
+    nav button {
+        margin-right: 2vw;
+    } 
 }
