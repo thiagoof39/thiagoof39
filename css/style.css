@@ -23,31 +23,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Ubuntu, sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-}
-
-
-.navbar-transparente {
-	padding: 15px 0px;
-    background: rgba(0,0,0,0.6);
-    margin-bottom: 10px;
-}
-
-.carousel-inner {
-    margin-top: 10vh;
-}
-
-.carousel-inner h1 {
-    text-transform: uppercase;
-}
-
-.carousel-inner span {
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 li {
-    display: inline-block
+    display: inline-block;
 }
 
 li a {
@@ -59,10 +39,8 @@ li a:hover {
     border-bottom: 1px solid white;
     color: #fff;
     font-size: 1rem;
-    transition: all 1s ease;
     padding: 0;
 }
-
 
 section p{
     margin-left: 0;
@@ -76,7 +54,11 @@ img {
     align-items: center;
 }
 
-
+.navbar-transparente {
+	padding: 15px 0px;
+    background: rgba(0,0,0,0.6);
+    margin-bottom: 10px;
+}
 
 
 #banner {
@@ -93,6 +75,16 @@ img {
     margin-top: 5vh;
 }
 
+#banner .carousel-inner {
+    margin-top: 10vh;
+}
+
+#banner .carousel-inner span {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
 #sobre {
     margin-top: 30px;
 }
@@ -106,6 +98,29 @@ img {
     display: flex;
     justify-content: center;
 
+}
+
+#portfolio .detalhes {
+    width: 430px; 
+    height: 400px; 
+}
+
+#portfolio .detalhes img {
+    padding: 0; 
+    margin: 0;
+    border-radius: 15px 15px 0px 0px ;
+}
+
+#portfolio .detalhes p{
+    border: 1px solid white;
+    border-radius: 0px 0px 15px 15px;
+
+    background: white;
+
+    text-align: justify;
+    color: black;
+
+    padding: 5px 15px;
 }
 
 #stacks p {
