@@ -168,9 +168,9 @@ footer span {
         margin-right: 2vw;
     } 
 
-    #banner h1 {
+    #banner h1, #menu h1 {
         width: auto;
-        font-size: 2em;
+        font-size: 1.5em;
         padding: 5px 10px;
     }
 
