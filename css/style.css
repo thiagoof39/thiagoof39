@@ -67,25 +67,29 @@ img {
 #banner {
     position: relative;
     height: 90vh;
-    opacity: 0.8;
+    opacity: 0.9;
 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;    
-    background-image: url(../img/banner2.jpg);
+    background-image: url(../img/banner.jpg);
 
     margin-top: 5vh;
 }
 
-#banner .carousel-inner {
-    margin-top: 10vh;
+#banner .carousel-inner {       
+    top: 40vh;
+    text-shadow: 0px 0px #fff;
+
+    border-radius: 10px;
+    background: #000;
 }
 
-#banner .carousel-inner span {
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
+#banner h1 {
+    width: 35vw;
+    padding-top: 5px;
+    font-style: italic;
 }
 
 #sobre {
