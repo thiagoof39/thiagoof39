@@ -1,8 +1,4 @@
-:root {
-    --title-color: #322153;
-    --primary-color: #34cb79;
-}
-
+/* CONFIGURAÇÕES PADRÃO */
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +18,7 @@ body {
     max-height: 1200px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
     font-family: Ubuntu, sans-serif;
     text-transform: uppercase;
     font-weight: bold;
@@ -45,25 +41,7 @@ li a:hover {
     padding: 0;
 }
 
-section p{
-    margin-left: 0;
-}
-
-img {
-    /* transform: rotate(-32deg); */
-    margin-left: -30px; 
-    margin-top: -50px;
-    display: flex;
-    align-items: center;
-}
-
-.navbar-transparente {
-	padding: 15px 0px;
-    background: rgba(0,0,0,0.6);
-    margin-bottom: 10px;
-}
-
-
+/* CONFIGURAÇÕES DO BANNER - Img de fundo fixo e Carrousel de texto*/
 #banner {
     position: relative;
     height: 90vh;
@@ -92,8 +70,23 @@ img {
     font-style: italic;
 }
 
+/* CONFIGURAÇÕES DO SOBRE MIM*/
 #sobre {
     margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#sobre #teste {
+    left: 1%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/sem-fundo1.png);
+}
+
+#sobre span {
+    display: none;
 }
 
 #sobre p {
@@ -101,42 +94,37 @@ img {
     font-size: 1.2em;
 }
 
+/* CONFIGURAÇÕES DO PORTFÓLIO*/
 #portfolio .row {
     display: flex;
     justify-content: start;
-
 }
 
 #portfolio .detalhes {
     width: 430px; 
     height: 400px; 
+    
 }
 
 #portfolio .detalhes img {
-    padding: 0; 
-    margin: 0;
-    border-radius: 15px 15px 0px 0px ;
+    border-radius: 10px 10px 0px 0px ;
 }
 
 #portfolio .detalhes p{
     border: 1px solid white;
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 0px 0px 10px 10px;
 
     background: white;
 
     text-align: justify;
     color: black;
 
+    height: 17vh;
+    
     padding: 5px 15px;
 }
 
-#stacks p {
-    font-size: 1rem;
-    font-family: Roboto, sans-serif;
-
-    margin-top: 3vh;
-}
-
+/* CONFIGURAÇÕES DA ÁREA DE CONTATO*/
 #contato a {
     text-decoration: none;
     color: #fff;
@@ -150,6 +138,7 @@ img {
     padding: 0;
 }
 
+/* CONFIGURAÇÕES DO RODAPÉ*/
 footer {
     margin-bottom: -5rem;
     padding: 0.3rem 0;
@@ -163,6 +152,7 @@ footer span {
     font-size: 1rem;
 }
 
+/* CONFIGURAÇÕES DA DESIGN RESPOSIVO */
 @media (min-width: 768px) and (max-width: 991.98px) {
 	#nav-principal {
 		text-transform: uppercase;
@@ -178,7 +168,23 @@ footer span {
         margin-right: 2vw;
     } 
 
-    h1, h2, h3, h4, h5, h6 {
-        font-size: auto;
+    #banner h1 {
+        width: auto;
+        font-size: 2em;
+        padding: 5px 10px;
     }
+
+    #portfolio  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #portfolio .detalhes{        
+        margin: 0 auto;
+    }
+
+    #portfolio .detalhes p{
+        height: auto;      
+    }
+    
 }
