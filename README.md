@@ -17,5 +17,9 @@ In it I exposed some projects carried out in courses and also projects of people
 ![templaate](https://github.com/thiagoof39/thiagoof39.github.io/blob/master/img/portfolio.gif)
 
 
+#### Observação
+Portfólio constantemente atualizado e aprimorado.
 
-*Portfólio em constante atualizações e melhorias*
+_Portfolio constantly updated and improved._
+
+###### *By Thiago Oliviera
