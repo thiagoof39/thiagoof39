@@ -14,7 +14,7 @@ In it I exposed some projects carried out in courses and also projects of people
 - JavaScript
 ```
 ### Template
-![Image](portfolio.gif)
+![templaate](https://github.com/thiagoof39/thiagoof39.github.io/blob/master/img/portfolio.gif)
 
 
 For more details see .
