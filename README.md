@@ -22,4 +22,4 @@ Portfólio constantemente atualizado e aprimorado.
 
 _Portfolio constantly updated and improved._
 
-###### *By Thiago Oliviera
+###### *By Thiago Oliviera*
