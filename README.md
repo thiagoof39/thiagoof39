@@ -1,32 +1,23 @@
 ## Bem Vindo
 
-You can use the [editor on GitHub](https://github.com/thiagoof39/thiagoof39/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Este é o meu portfólio no [GitHub Thiago Oliveira](https://thiagoof39.github.io//)  que tenho útilizado para resumir um pouco sobre mim e das minhas experiências.
+Nele eu exponho alguns projeto feitos em cursos e também projetos pessoas.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+_This is my portfolio on [GitHub Thiago Oliveira](https://thiagoof39.github.io//) that I used to summarize a little about myself, my knowledge and experiences.
+In it I exposed some projects carried out in courses and also projects of people._
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+### Tecnologia
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
 ```
+### Template
+![Image](portfolio.gif)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+For more details see .
 
 ### Jekyll Themes
 
